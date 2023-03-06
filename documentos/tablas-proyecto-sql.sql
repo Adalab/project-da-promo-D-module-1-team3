@@ -64,4 +64,11 @@ CREATE TABLE tabla_txt (
     q34 VARCHAR(150),
     q35 VARCHAR(150),
     q41 VARCHAR(150),
-);
+    PRIMARY KEY (index_txt),
+    CONSTRAINT `fk_tabla_txt_tabla_sql`
+		FOREIGN KEY (index_sql)
+        REFERENCES tabla_sql (index_sql) ON UPDATE CASCADE ON DELETE CASCADE);
+        
+        
+        
+        
