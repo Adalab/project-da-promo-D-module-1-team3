@@ -69,6 +69,6 @@ CREATE TABLE tabla_txt (
 		FOREIGN KEY (index_sql)
         REFERENCES tabla_sql (index_sql) ON UPDATE CASCADE ON DELETE CASCADE);
         
-        
+       
         
         
